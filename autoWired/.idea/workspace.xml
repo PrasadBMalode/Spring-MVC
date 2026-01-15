@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8942f7a-60fd-4d1a-9de5-ed82d946991e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../building/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../building/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../building/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../building/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../building/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../building/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cafeshop/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cafeshop/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cafeshop/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cafeshop/src/main/webapp/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="d8942f7a-60fd-4d1a-9de5-ed82d946991e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
