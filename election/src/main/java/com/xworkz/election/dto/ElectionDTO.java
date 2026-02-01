@@ -2,7 +2,7 @@ package com.xworkz.election.dto;
 import lombok.*;
 import org.springframework.stereotype.Component;
 
-//@Component
+
 @AllArgsConstructor
 @Setter
 @Getter
