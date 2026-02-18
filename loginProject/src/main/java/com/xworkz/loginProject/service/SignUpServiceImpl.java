@@ -7,17 +7,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class RegisterService {
+public class SignUpServiceImpl implements SignUpService {
 
     @Autowired
     UserRegister userRegister;
 
-    public boolean registerDetailsSave(UserRegisterDTO userRegisterDTO) throws InvalidDataException {
+    public boolean registerDetailsSave(UserRegisterDTO userRegisterDTO) throws InvalidDataException{
 
         String password = userRegisterDTO.getPassword();
         String confirmPassword = userRegisterDTO.getConfirmPassword();
 
-        if (userRegisterDTO.getUserName() != null && userRegisterDTO.getUserName().length() > 3 && userRegisterDTO.getUserName().length() < 15
+        if (userRegisterDTO.getUserName() != null && userRegisterDTO.getUserName().length() > 3 && userRegisterDTO.getUserName().length() < 15 && userRegisterDTO.getUserName().matches("^[A-Za-z]+$")
                 && userRegisterDTO.getNumber().length() == 10 && userRegisterDTO.getNumber() != null &&
                 userRegisterDTO.getEmail().contains("@gmail.com") && userRegisterDTO.getEmail() != null &&
                 userRegisterDTO.getEmail().length() > 13 && userRegisterDTO.getEmail().length() < 25

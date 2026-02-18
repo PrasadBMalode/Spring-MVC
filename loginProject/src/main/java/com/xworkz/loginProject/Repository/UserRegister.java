@@ -13,7 +13,7 @@ public class UserRegister {
     String username = "root";
     String password = "Prasad@123";
     String insertQuery = "insert into register_tb values(?,?,?,?)";
-    String getQuery="select password from register_tb where userName=?";
+    String getQuery="select password from register_tb where email=?";
 
     public void userDetailsSave(UserRegisterDTO userRegisterDTO) {
         try {
@@ -43,12 +43,12 @@ public class UserRegister {
 
     }
 
-    public String userDetailsRetrieve(String userName){
+    public String userDetailsRetrieve(String email){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection=DriverManager.getConnection(url,username,password);
             PreparedStatement preparedStatement = connection.prepareStatement(getQuery);
-            preparedStatement.setString(1,userName);
+            preparedStatement.setString(1, email);
 
             ResultSet resultSet = preparedStatement.executeQuery();
 

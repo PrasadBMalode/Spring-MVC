@@ -1,7 +1,7 @@
 package com.xworkz.loginProject.controler;
 
 import com.xworkz.loginProject.dto.UserRegisterDTO;
-import com.xworkz.loginProject.service.RegisterService;
+import com.xworkz.loginProject.service.SignUpServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SignUpControler {
 
     @Autowired
-    RegisterService registerService;
+    SignUpServiceImpl registerService;
 
     public SignUpControler() {
     }

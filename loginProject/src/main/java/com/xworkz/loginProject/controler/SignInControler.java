@@ -1,6 +1,7 @@
 package com.xworkz.loginProject.controler;
 
 import com.xworkz.loginProject.service.SignInService;
+import com.xworkz.loginProject.service.SignInServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,10 +21,10 @@ public class SignInControler {
     }
 
     @GetMapping("getSignIn")
-    public String signInDataSave(@RequestParam String userName, @RequestParam String password) {
+    public String signInDataSave(@RequestParam String email, @RequestParam String password) {
         System.out.println("its a signInDataSave");
 
-        boolean isValid = signInService.detailsRetrive(userName, password);
+        boolean isValid = signInService.detailsRetrive(email, password);
 
         if (isValid) {
             return "SignInSuccessfully";
